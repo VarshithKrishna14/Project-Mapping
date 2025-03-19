@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e0cb403c9c40aae69540032286fb1369 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e0cb403c9c40aae69540032286fb1369" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e0cb403c9c40aae69540032286fb1369 = L.map(
+                "map_e0cb403c9c40aae69540032286fb1369",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bf1fcf852cd4c49abccd4cac19aa0b08 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bf1fcf852cd4c49abccd4cac19aa0b08.addTo(map_e0cb403c9c40aae69540032286fb1369);
+        
+    
+            var marker_cluster_b503ae12b8db9a3ccb47e69c02690601 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_95dfa7f61666c7b9852f3d6a5b9d88ab = L.marker(
+                [0.0, 0.0],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_e07cd13b68f9b300bf6b00dec1847817 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30bf4f6ff968f7d68baab4681e81cd1b = $(`<div id="html_30bf4f6ff968f7d68baab4681e81cd1b" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> ANCA DANIELA PAUNICA M.D.<br>           <b>Group:</b> Physician Group Name<br>           <b>Location:</b> Specific Location Name (e.g., Main Street Clinic)<br>           </div>`)[0];
+                popup_e07cd13b68f9b300bf6b00dec1847817.setContent(html_30bf4f6ff968f7d68baab4681e81cd1b);
+            
+        
+
+        marker_95dfa7f61666c7b9852f3d6a5b9d88ab.bindPopup(popup_e07cd13b68f9b300bf6b00dec1847817)
+        ;
+
+        
+    
+    
+            marker_95dfa7f61666c7b9852f3d6a5b9d88ab.bindTooltip(
+                `<div>
+                     ANCA DANIELA PAUNICA M.D.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bd8011093c17f4735c177c7dd3bead23 = L.marker(
+                [42.3364, -71.1017],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_d9e881d614be259cb2a6585b9a5378df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3726c37eee8357ef3a93e3d4f681d145 = $(`<div id="html_3726c37eee8357ef3a93e3d4f681d145" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> MARJORIE BRITT KOSSOFF<br>           <b>Group:</b> Brigham and Women's Hospital Main Campus<br>           <b>Location:</b> 75 Francis Street, Boston, MA 02115<br>           </div>`)[0];
+                popup_d9e881d614be259cb2a6585b9a5378df.setContent(html_3726c37eee8357ef3a93e3d4f681d145);
+            
+        
+
+        marker_bd8011093c17f4735c177c7dd3bead23.bindPopup(popup_d9e881d614be259cb2a6585b9a5378df)
+        ;
+
+        
+    
+    
+            marker_bd8011093c17f4735c177c7dd3bead23.bindTooltip(
+                `<div>
+                     MARJORIE BRITT KOSSOFF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_39a23d54ffa0789dc6b6c23c328e4ce4 = L.marker(
+                [42.2842, -71.2444],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_3de508f488fee0c90e59fc1eb5a8e0d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_607a33f866a155549130f086ac79ef98 = $(`<div id="html_607a33f866a155549130f086ac79ef98" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> MARJORIE BRITT KOSSOFF<br>           <b>Group:</b> Brigham and Women's Faulkner Hospital<br>           <b>Location:</b> 1153 Centre Street, Boston, MA 02130<br>           </div>`)[0];
+                popup_3de508f488fee0c90e59fc1eb5a8e0d8.setContent(html_607a33f866a155549130f086ac79ef98);
+            
+        
+
+        marker_39a23d54ffa0789dc6b6c23c328e4ce4.bindPopup(popup_3de508f488fee0c90e59fc1eb5a8e0d8)
+        ;
+
+        
+    
+    
+            marker_39a23d54ffa0789dc6b6c23c328e4ce4.bindTooltip(
+                `<div>
+                     MARJORIE BRITT KOSSOFF
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b882579f2b1f1c2ea0602eeb3ae7392a = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_ae5bed001339175a4089e62fcb16e315 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ac3b2d40729b5ef1f192bda9835b634 = $(`<div id="html_5ac3b2d40729b5ef1f192bda9835b634" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> Yong Kim DDS<br>           <b>Group:</b> Smile Dental Group<br>           <b>Location:</b> Downtown Los Angeles Office<br>           </div>`)[0];
+                popup_ae5bed001339175a4089e62fcb16e315.setContent(html_5ac3b2d40729b5ef1f192bda9835b634);
+            
+        
+
+        marker_b882579f2b1f1c2ea0602eeb3ae7392a.bindPopup(popup_ae5bed001339175a4089e62fcb16e315)
+        ;
+
+        
+    
+    
+            marker_b882579f2b1f1c2ea0602eeb3ae7392a.bindTooltip(
+                `<div>
+                     Yong Kim DDS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a3bb40f2057fe6c9f0a8868357d1c9e = L.marker(
+                [34.1484, -118.0985],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_6dd6e1d1d5bc83152bfb21d8a75cfce6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_975b2b09fb4f6a40d01b46f9b4b3f61c = $(`<div id="html_975b2b09fb4f6a40d01b46f9b4b3f61c" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> Yong Kim DDS<br>           <b>Group:</b> Smile Dental Group<br>           <b>Location:</b> Pasadena Office<br>           </div>`)[0];
+                popup_6dd6e1d1d5bc83152bfb21d8a75cfce6.setContent(html_975b2b09fb4f6a40d01b46f9b4b3f61c);
+            
+        
+
+        marker_8a3bb40f2057fe6c9f0a8868357d1c9e.bindPopup(popup_6dd6e1d1d5bc83152bfb21d8a75cfce6)
+        ;
+
+        
+    
+    
+            marker_8a3bb40f2057fe6c9f0a8868357d1c9e.bindTooltip(
+                `<div>
+                     Yong Kim DDS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c181aa2fca950c0f69ec74c2203cb546 = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_7d9c531e31e5faef5d41a3cb84de008c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_caf8e497919fb7e345aad73ec578cfc1 = $(`<div id="html_caf8e497919fb7e345aad73ec578cfc1" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> Ruth Adelabi<br>           <b>Group:</b> Example Behavioral Health Group<br>           <b>Location:</b> Main Street Clinic<br>           </div>`)[0];
+                popup_7d9c531e31e5faef5d41a3cb84de008c.setContent(html_caf8e497919fb7e345aad73ec578cfc1);
+            
+        
+
+        marker_c181aa2fca950c0f69ec74c2203cb546.bindPopup(popup_7d9c531e31e5faef5d41a3cb84de008c)
+        ;
+
+        
+    
+    
+            marker_c181aa2fca950c0f69ec74c2203cb546.bindTooltip(
+                `<div>
+                     Ruth Adelabi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c0342a218ab782cb1580cf9dd90d7afa = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_97a485aee75714987d5bf4dedf47c3a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa978f58bc81b16116d192c7fffb0e76 = $(`<div id="html_fa978f58bc81b16116d192c7fffb0e76" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> Ruth Adelabi<br>           <b>Group:</b> Example Behavioral Health Group<br>           <b>Location:</b> Another Clinic Location<br>           </div>`)[0];
+                popup_97a485aee75714987d5bf4dedf47c3a0.setContent(html_fa978f58bc81b16116d192c7fffb0e76);
+            
+        
+
+        marker_c0342a218ab782cb1580cf9dd90d7afa.bindPopup(popup_97a485aee75714987d5bf4dedf47c3a0)
+        ;
+
+        
+    
+    
+            marker_c0342a218ab782cb1580cf9dd90d7afa.bindTooltip(
+                `<div>
+                     Ruth Adelabi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dd1d6f1f6c0a9bbbd6129464db559413 = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_0ade28c19c4c3c34d321c49ad444d72c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_016dd95f35b77d1cf6b9745cd1b12b07 = $(`<div id="html_016dd95f35b77d1cf6b9745cd1b12b07" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> Arnold Kang M.D.<br>           <b>Group:</b> Example Medical Group<br>           <b>Location:</b> Main Clinic<br>           </div>`)[0];
+                popup_0ade28c19c4c3c34d321c49ad444d72c.setContent(html_016dd95f35b77d1cf6b9745cd1b12b07);
+            
+        
+
+        marker_dd1d6f1f6c0a9bbbd6129464db559413.bindPopup(popup_0ade28c19c4c3c34d321c49ad444d72c)
+        ;
+
+        
+    
+    
+            marker_dd1d6f1f6c0a9bbbd6129464db559413.bindTooltip(
+                `<div>
+                     Arnold Kang M.D.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dc09108e88c87cad9c452fc9b46afde7 = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_433df388f315a736ad06ceb918480493 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a72cb5e779d93fbe3621967664fd7ff7 = $(`<div id="html_a72cb5e779d93fbe3621967664fd7ff7" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> Arnold Kang M.D.<br>           <b>Group:</b> Example Medical Group<br>           <b>Location:</b> satellite office A<br>           </div>`)[0];
+                popup_433df388f315a736ad06ceb918480493.setContent(html_a72cb5e779d93fbe3621967664fd7ff7);
+            
+        
+
+        marker_dc09108e88c87cad9c452fc9b46afde7.bindPopup(popup_433df388f315a736ad06ceb918480493)
+        ;
+
+        
+    
+    
+            marker_dc09108e88c87cad9c452fc9b46afde7.bindTooltip(
+                `<div>
+                     Arnold Kang M.D.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_48b9d42303ea0077d83e8b9f0ac6befb = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_eda471303d30defda9b7cda78f730a46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c405f60d09c513e146cd10363f06f35 = $(`<div id="html_9c405f60d09c513e146cd10363f06f35" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> Dr. Example Smith<br>           <b>Group:</b> Acme Medical Group<br>           <b>Location:</b> Acme Medical Group - Downtown Clinic<br>           </div>`)[0];
+                popup_eda471303d30defda9b7cda78f730a46.setContent(html_9c405f60d09c513e146cd10363f06f35);
+            
+        
+
+        marker_48b9d42303ea0077d83e8b9f0ac6befb.bindPopup(popup_eda471303d30defda9b7cda78f730a46)
+        ;
+
+        
+    
+    
+            marker_48b9d42303ea0077d83e8b9f0ac6befb.bindTooltip(
+                `<div>
+                     Dr. Example Smith
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2d1f1b8f236fc3cef679b0da527c2d3b = L.marker(
+                [34.06, -118.25],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_714f30b51f522423a335f3500f0c8723 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23b8f8940fb7f040d5b27edc89f7b3e1 = $(`<div id="html_23b8f8940fb7f040d5b27edc89f7b3e1" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> Dr. Example Smith<br>           <b>Group:</b> Acme Medical Group<br>           <b>Location:</b> Acme Medical Group - Main Street Office<br>           </div>`)[0];
+                popup_714f30b51f522423a335f3500f0c8723.setContent(html_23b8f8940fb7f040d5b27edc89f7b3e1);
+            
+        
+
+        marker_2d1f1b8f236fc3cef679b0da527c2d3b.bindPopup(popup_714f30b51f522423a335f3500f0c8723)
+        ;
+
+        
+    
+    
+            marker_2d1f1b8f236fc3cef679b0da527c2d3b.bindTooltip(
+                `<div>
+                     Dr. Example Smith
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b7fe685ed1737ae8fac581359642d5b4 = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_ae65d8047543481ed332e3704cc41c12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d72a0e27f48e60c08bb3d5ffb393b7b8 = $(`<div id="html_d72a0e27f48e60c08bb3d5ffb393b7b8" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> Keyvan Karimigalougahni<br>           <b>Group:</b> KMG Aesthetics<br>           <b>Location:</b> Los Angeles, CA (General Vicinity - Please verify exact address)<br>           </div>`)[0];
+                popup_ae65d8047543481ed332e3704cc41c12.setContent(html_d72a0e27f48e60c08bb3d5ffb393b7b8);
+            
+        
+
+        marker_b7fe685ed1737ae8fac581359642d5b4.bindPopup(popup_ae65d8047543481ed332e3704cc41c12)
+        ;
+
+        
+    
+    
+            marker_b7fe685ed1737ae8fac581359642d5b4.bindTooltip(
+                `<div>
+                     Keyvan Karimigalougahni
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_24edbe8f2b3a7d10196d74af547ac2fc = L.marker(
+                [33.6846, -117.8265],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_600a8c9c50c56dfd6e56aa1536eb9bb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30c2f9402a8af88440c59d11c3e82dad = $(`<div id="html_30c2f9402a8af88440c59d11c3e82dad" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> Keyvan Karimigalougahni<br>           <b>Group:</b> KMG Aesthetics<br>           <b>Location:</b> Irvine, CA (General Vicinity - Please verify exact address)<br>           </div>`)[0];
+                popup_600a8c9c50c56dfd6e56aa1536eb9bb7.setContent(html_30c2f9402a8af88440c59d11c3e82dad);
+            
+        
+
+        marker_24edbe8f2b3a7d10196d74af547ac2fc.bindPopup(popup_600a8c9c50c56dfd6e56aa1536eb9bb7)
+        ;
+
+        
+    
+    
+            marker_24edbe8f2b3a7d10196d74af547ac2fc.bindTooltip(
+                `<div>
+                     Keyvan Karimigalougahni
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e120d5bb9c3286822a8c8fdde49c3511 = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_544934c8d0a94dfbc00aa705070671d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7fea92a9eacbee60c036497341fe67e = $(`<div id="html_e7fea92a9eacbee60c036497341fe67e" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> KIRK MICHAEL BROWN M.D.<br>           <b>Group:</b> Example Medical Group<br>           <b>Location:</b> Example Medical Building<br>           </div>`)[0];
+                popup_544934c8d0a94dfbc00aa705070671d7.setContent(html_e7fea92a9eacbee60c036497341fe67e);
+            
+        
+
+        marker_e120d5bb9c3286822a8c8fdde49c3511.bindPopup(popup_544934c8d0a94dfbc00aa705070671d7)
+        ;
+
+        
+    
+    
+            marker_e120d5bb9c3286822a8c8fdde49c3511.bindTooltip(
+                `<div>
+                     KIRK MICHAEL BROWN M.D.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f546733d1230a864fc1945793fa95a0f = L.marker(
+                [-33.8688, 151.2093],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_e682bdac763c8c00f2c046fe2c55f5b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e9b9e2df43bd095bb90bea689e3ec1f = $(`<div id="html_6e9b9e2df43bd095bb90bea689e3ec1f" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> JAMES ALEXANDER PAGET DRUMMOND<br>           <b>Group:</b> Sydney Medical Practice<br>           <b>Location:</b> Sydney, NSW<br>           </div>`)[0];
+                popup_e682bdac763c8c00f2c046fe2c55f5b0.setContent(html_6e9b9e2df43bd095bb90bea689e3ec1f);
+            
+        
+
+        marker_f546733d1230a864fc1945793fa95a0f.bindPopup(popup_e682bdac763c8c00f2c046fe2c55f5b0)
+        ;
+
+        
+    
+    
+            marker_f546733d1230a864fc1945793fa95a0f.bindTooltip(
+                `<div>
+                     JAMES ALEXANDER PAGET DRUMMOND
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4b791e5a932d9d4562e2ea3ac5f271d3 = L.marker(
+                [-27.4931, 153.0569],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_caf9cef137ab72f79711d27922d2eb9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a229260bf7a7b459e1a94e154368a30 = $(`<div id="html_6a229260bf7a7b459e1a94e154368a30" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> HEIDI BRUMMERT LENNINGS<br>           <b>Group:</b> Mindworx Psychology<br>           <b>Location:</b> Brisbane - Milton<br>           </div>`)[0];
+                popup_caf9cef137ab72f79711d27922d2eb9f.setContent(html_6a229260bf7a7b459e1a94e154368a30);
+            
+        
+
+        marker_4b791e5a932d9d4562e2ea3ac5f271d3.bindPopup(popup_caf9cef137ab72f79711d27922d2eb9f)
+        ;
+
+        
+    
+    
+            marker_4b791e5a932d9d4562e2ea3ac5f271d3.bindTooltip(
+                `<div>
+                     HEIDI BRUMMERT LENNINGS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0776e15710d5cb5e54879c2096bc91ec = L.marker(
+                [-27.5202, 153.0343],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_2e446eb36156fcd671d60d0e6c99fda1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c153ae8575b5baf521da949694bc18cb = $(`<div id="html_c153ae8575b5baf521da949694bc18cb" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> HEIDI BRUMMERT LENNINGS<br>           <b>Group:</b> Mindworx Psychology<br>           <b>Location:</b> Brisbane - Mount Gravatt<br>           </div>`)[0];
+                popup_2e446eb36156fcd671d60d0e6c99fda1.setContent(html_c153ae8575b5baf521da949694bc18cb);
+            
+        
+
+        marker_0776e15710d5cb5e54879c2096bc91ec.bindPopup(popup_2e446eb36156fcd671d60d0e6c99fda1)
+        ;
+
+        
+    
+    
+            marker_0776e15710d5cb5e54879c2096bc91ec.bindTooltip(
+                `<div>
+                     HEIDI BRUMMERT LENNINGS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_482f6381e7b9546c102d956ba989061f = L.marker(
+                [34.0522, -118.2437],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_0759c40e1187a22891f02bab32696430 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc67f4ab9072b5e4eef346952df0512b = $(`<div id="html_fc67f4ab9072b5e4eef346952df0512b" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> DENNIS R KERR M.D.<br>           <b>Group:</b> Kerr Medical Group<br>           <b>Location:</b> Los Angeles, CA (Approximate - City Center)<br>           </div>`)[0];
+                popup_0759c40e1187a22891f02bab32696430.setContent(html_fc67f4ab9072b5e4eef346952df0512b);
+            
+        
+
+        marker_482f6381e7b9546c102d956ba989061f.bindPopup(popup_0759c40e1187a22891f02bab32696430)
+        ;
+
+        
+    
+    
+            marker_482f6381e7b9546c102d956ba989061f.bindTooltip(
+                `<div>
+                     DENNIS R KERR M.D.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e264728671a80212e1acccf07661126b = L.marker(
+                [43.0389, -87.9065],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_8f1bb39c43924519a5bda4dc40b27fe9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af152b61ddbf689f87e342135b709519 = $(`<div id="html_af152b61ddbf689f87e342135b709519" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> ALLISON JOYCE DUCHOW MD<br>           <b>Group:</b> Children's Wisconsin Primary Care - Midtown Clinic<br>           <b>Location:</b> Children's Wisconsin Primary Care - Midtown Clinic<br>           </div>`)[0];
+                popup_8f1bb39c43924519a5bda4dc40b27fe9.setContent(html_af152b61ddbf689f87e342135b709519);
+            
+        
+
+        marker_e264728671a80212e1acccf07661126b.bindPopup(popup_8f1bb39c43924519a5bda4dc40b27fe9)
+        ;
+
+        
+    
+    
+            marker_e264728671a80212e1acccf07661126b.bindTooltip(
+                `<div>
+                     ALLISON JOYCE DUCHOW MD
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eee279164ebcc02ae427b5988d382e8a = L.marker(
+                [43.0389, -87.9065],
+                {
+}
+            ).addTo(marker_cluster_b503ae12b8db9a3ccb47e69c02690601);
+        
+    
+        var popup_d5d85877817283b91b2054ed947d7d2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ae689466f4b82d04d638969d483c20c = $(`<div id="html_3ae689466f4b82d04d638969d483c20c" style="width: 100.0%; height: 100.0%;">           <b>Physician:</b> ALLISON JOYCE DUCHOW MD<br>           <b>Group:</b> Medical College of Wisconsin<br>           <b>Location:</b> Medical College of Wisconsin<br>           </div>`)[0];
+                popup_d5d85877817283b91b2054ed947d7d2a.setContent(html_3ae689466f4b82d04d638969d483c20c);
+            
+        
+
+        marker_eee279164ebcc02ae427b5988d382e8a.bindPopup(popup_d5d85877817283b91b2054ed947d7d2a)
+        ;
+
+        
+    
+    
+            marker_eee279164ebcc02ae427b5988d382e8a.bindTooltip(
+                `<div>
+                     ALLISON JOYCE DUCHOW MD
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_b503ae12b8db9a3ccb47e69c02690601.addTo(map_e0cb403c9c40aae69540032286fb1369);
+        
+</script>
+</html>
